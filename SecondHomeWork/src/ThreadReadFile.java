@@ -19,7 +19,7 @@ import java.io.File;
 
 public class ThreadReadFile {
     // 设置读取文件指针移动的距离
-    public static int endPointer = 1024;
+    public static int block = 1024;
 
     public static void main(String[] args) throws Exception {
         // 创建读取文件地址
@@ -34,14 +34,15 @@ public class ThreadReadFile {
         }
 
         // 将文件分块
-        long divide = f1.length() / endPointer;
-        divide = f1.length() % endPointer == 0 ? divide : divide + 1;
+        long divide = f1.length() / block;
+        divide = f1.length() % block == 0 ? divide : divide + 1;
 
         // 循环调用多线程读取并写入文件
         for (int i = 0; i < divide; i++) {
-            new Thread(new MyRunnableImpl(f1, f2, i*endPointer,endPointer)).start();
-            // 延迟十毫秒 使线程名顺序打出来，若没有延迟，线程名会重叠（个人观点）
-            Thread.sleep(10);
+            new Thread(new MyRunnableImpl(f1, f2, i*block,block)).start();
+            // 延迟十毫秒 使线程名顺序打出来，若没有延迟，线程名会被覆盖（个人观点）
+            // 可去掉延迟，解决方案：为每个线程设置多余的指针偏移（详细见MyRunnableImpl.java）
+//            Thread.sleep(100);
         }
 
         // 延时
