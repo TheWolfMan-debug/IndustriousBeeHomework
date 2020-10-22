@@ -9,7 +9,7 @@ public class MyRunnableImpl implements Runnable {
     // 设置开始位置的偏移
     private final long startPointer;
     // 读取文件的长度
-    private int block;
+    private final int block;
     // 创建随机流
     private RandomAccessFile rafR;
     private RandomAccessFile rafW;
@@ -47,10 +47,10 @@ public class MyRunnableImpl implements Runnable {
 
                 // 设 读取长度=1024 线程名长度 = 10
                 // 例如：
-                // 开始位置为1024*0 指针增加的偏移量为0
-                // 开始位置为1024*1 指针增加的偏移量为 1024+10*1024/1024
-                // 开始位置为1024*2 指针增加的偏移量为 1024+10*1024*2/1024
-                // 开始位置为1024*3 指针增加的偏移量为 1024+10*1024*3/1024
+                // 开始位置为1024*0 指针增加的偏移量为 1024*0+10*0/1024
+                // 开始位置为1024*1 指针增加的偏移量为 1024*1+10*1024/1024
+                // 开始位置为1024*2 指针增加的偏移量为 1024*2+10*1024*2/1024
+                // 开始位置为1024*3 指针增加的偏移量为 1024*3+10*1024*3/1024
                 // ……………………
                 rafW.seek(startPointer + name.length * startPointer / block);
             }
