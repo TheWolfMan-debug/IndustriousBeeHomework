@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(../img/register.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+
+    text-align: center;
+}
+
+.box {
+    width: 500px;
+    height: 180px;
+    margin: 12% auto;
+    background-color: rgba(0, 0, 0, .3);
+    /*background-color: brown;*/
+
+}
+
+.box h1 {
+    color: rgb(0, 183, 232);
+}
+
+input {
+    width: 210px;
+    outline: none;
+    border: none;
+    color: rgb(0, 183, 232);
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    top: 10px;
+    left: 32%;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+body .content01 {
+    height: 40px;
+    margin-top: 15px;
+    position: relative;
+
+}
+
+body .content02 {
+    height: 40px;
+    position: relative;
+
+}
+
+body .iconfont {
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(0, 183, 232);
+    position: absolute;
+    top: 0px;
+    left: 26%;
+}
+
+body .i2 {
+    font-size: 24px;
+}
+
+button {
+    !important;
+    height: 30px;
+    width: 35%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    margin-left: 50%;
+    left: -17.5%;
+    top: 10px;
+
+    transition: 3s;
+    animation: chara 2s 1 alternate,ani 3s infinite alternate;
+
+
+}
+
+@keyframes chara {
+    0%{
+        top: 150px;
+    }
+    100%{
+        top: 10px;
+    }
+}
+
+@keyframes ani {
+    0% {
+        margin-left: 50%;
+        left: -17.5%;
+        background-color: rgb(0,130,166);
+        box-shadow: 5px 5px 5px rgb(37, 166, 177), -5px -5px 5px rgb(48, 152, 177), 5px -5px 5px rgb(30, 107, 142), -5px 5px 5px rgb(17, 123, 238);
+    }
+    100% {
+        margin-left: 50%;
+        left: -17.5%;
+        background-color: rgb(83, 91, 241);
+    }
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(0, 255, 175);
+}
+
+button:focus {
+    border: none;
+    background-color: #3749a1;
+}
+
+
+#s_username {
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    width: 100px;
+    float: left;
+    margin-left: 50%;
+    position: relative;
+    left: -50px;
+    top: 25px;
+    text-shadow:0px 0px 5px #F76809;
+
+}
+
+#yes, #no {
+    display: none;
+}
+
+
+/* 未被选中的单选框样式 空心圆圈*/
+input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    border: 2px solid #bfcbd9;
+}
+
+/* 被选中的单选框样式  给空心圆圈中间加上背景色*/
+input[type="radio"]:checked + label::before {
+    background-color: #178fe6;
+    background-clip: content-box; /* 规定背景颜色的绘制区域 */
+    padding: 2px;
+}
+
+/* 单选框文字的样式 */
+input[type="radio"] + label {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+#isVip {
+    /*background-color: #178fe6;*/
+    float: right;
+    bottom: 5px;
+    right: 10px;
+    position: relative;
+    color: white;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #c1c1c1 !important;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c1c1c1 !important;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c1c1c1 !important;
+}
+
+input::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c1c1c1 !important;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c1c1c1 !important;
+}
+
+#back{
+    width: 70px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top:118px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 183, 232);
+    font-size: 12px;
+    /*background-color: rgba(254, 197, 20, 0.1);*/
+    cursor: pointer;
+}

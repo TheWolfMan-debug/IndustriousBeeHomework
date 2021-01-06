@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/menuJs.js"></script>
+
+    <title>Document</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var uid = 10001;
+            $("td[data-uid = "+ uid +"]").html('正常');
+            alert(("td[data-uid = "+ uid +"]"))
+        })
+    </script>
+
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>用户名</th>
+        <th>状态</th>
+    <tr>
+    <tr>
+        <td>张三</td>
+        <td data-uid="10000">正常</td>
+    <tr>
+    <tr>
+        <td>李四</td>
+        <td data-uid="10001">冻结</td>
+    <tr>
+    <tr>
+        <td>王二麻子</td>
+        <td data-uid=10002>冻结</td>
+    <tr>
+</table>
+
+
+
+</body>
+</html>

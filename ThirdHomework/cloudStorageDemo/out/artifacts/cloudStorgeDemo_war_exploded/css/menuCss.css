@@ -1,0 +1,793 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    border: none;
+    user-select: none;
+    outline: none;
+    list-style: none;
+    text-align: center;
+
+    /*position: fixed;*/
+
+}
+
+html,body{
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*background-color: aqua;*/
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/menu.jpg);
+
+
+}
+
+.box {
+    width: 520px;
+    height: 265px;
+    /*width: 600px;*/
+    /*height: 300px;*/
+    margin: 10% auto;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.downloadForm {
+    float: left;
+    position: relative;
+    top: 100px;
+    right: 200px;
+    /*background-color: #d55b1b;*/
+}
+
+.uploadForm {
+    float: left;
+    /*background-color: #1bdb14;*/
+
+    height: 90px;
+    width: 100%;
+}
+
+.uploadForm .renameFile {
+    text-align: left;
+}
+
+.choseFile {
+    float: left;
+    /*background-color: blue;*/
+    height: 23px;
+    width: 250px;
+
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+
+    top:0px;
+    right:-100px
+
+}
+
+.outlineInput{
+    padding: 4px 10px;
+    height: 15px;
+    line-height: 15px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+    cursor: pointer;
+    font-size: 9px;
+
+    top: 7px;
+    right:353px;
+}
+
+.outlineInput:hover{
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+.renameFile {
+    float: left;
+    height: 30px;
+    width: 244px;
+    position: relative;
+    right: -1px;
+    top: 45px;
+    border: 0px;
+    line-height: 30px;
+
+    font-size: 9px;
+
+    color: #666666;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    box-sizing: content-box;
+    padding-left: 13px;
+}
+
+.uploadSubmitButton {
+    float: left;
+    position: relative;
+
+    width: 70px;
+    height: 25px;
+    font-size: 9px;
+
+    top: 7px;
+    right: 162px;
+
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.uploadSubmitButton:hover{
+
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+.uploadResetButton {
+    float: right;
+    position: relative;
+
+
+    width: 70px;
+    height: 25px;
+    font-size: 9px;
+    top: 7px;
+    right: 260px;
+
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.uploadResetButton:hover{
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+#exitButton {
+    float: right;
+    /*background-color: #c2a517;*/
+    position: relative;
+    top: -65px;
+    right: 20px;
+    height: 40px;
+    width: 85px;
+
+    font-size: 13px;
+
+    text-align: center;
+    line-height: 40px;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#exitButton:hover{
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+.userMenu {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    height: 134px;
+    /*background-color: #629218;*/
+    position: relative;
+    top: -46px;
+    left: 0px;
+}
+
+.userMenu li {
+    float: left;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.myUpload {
+    color: white;
+    font-size: 15px;
+    background-color: rgba(217, 176, 176, 0.3);
+    border-bottom:1px solid #b8b8b8  ;
+    box-sizing: border-box;
+}
+
+.myDownload {
+    color: white;
+
+    background-color: rgba(217, 176, 176, 0.3);
+    font-size: 15px;
+    border-bottom:1px solid #b8b8b8  ;
+    box-sizing: border-box;
+
+}
+
+.uploadContent {
+    height: 147px;
+    overflow: hidden;
+    line-height: 147px;
+    border-right:1px solid #b8b8b8 ;
+}
+
+.uploadContent li {
+    height: 25px;
+    /*width: 260px;*/
+    width: 260px;
+    /*background-color: #f19633;*/
+    font-size: 12px;
+    line-height: 25px;
+    text-align: left;
+
+    border: 1px solid #b8b8b8;
+    border-left: none;
+    border-right: none;
+}
+
+.uploadContent li:hover {
+    background-color: #8fb0b1;
+
+}
+
+
+.uploadContent .preview {
+    float: right;
+    /*background-color: #0ce29e;*/
+    position: relative;
+    top: 5px;
+    right: 25px;
+    height: 15px;
+    font-size: 10px;
+
+    line-height: 15px;
+
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+}
+.uploadContent button{
+    cursor: pointer;
+}
+
+.uploadContent .download {
+    float: right;
+    /*background-color: #cfc8de;*/
+    position: relative;
+    top: 5px;
+    right: 20px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 15px;
+
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+
+}
+
+
+.downloadContent {
+    height: 147px;
+    line-height: 147px;
+    overflow: hidden;
+    border-left:1px solid #b8b8b8 ;
+
+}
+
+.downloadContent:hover, .uploadContent:hover {
+    overflow-y: auto;
+}
+
+.downloadContent li {
+    height: 25px;
+    width: 260px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: left;
+
+    border: 1px solid #b8b8b8;
+    border-left: none;
+    border-right: none;
+}
+
+.downloadContent li:hover {
+    background-color: #8fb0b1;
+
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.downloadContent::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.downloadContent::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+.downloadContent::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    background-color: #c8c8c8;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.uploadContent::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.uploadContent::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+.uploadContent::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    background-color: #c8c8c8;
+}
+
+
+
+
+
+
+
+
+
+
+/** {*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*    user-select: none;*/
+/*    border: none;*/
+/*    user-select: none;*/
+/*    outline: none;*/
+/*    list-style: none;*/
+/*    text-align: center;*/
+
+/*    !*position: fixed;*!*/
+
+/*}*/
+
+
+/*body {*/
+/*    margin: 0 auto;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: 100%;*/
+/*    background-color: aqua;*/
+/*    text-align: center;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    background-image: url(../img/menu.jpg);*/
+
+
+/*}*/
+
+/*.box {*/
+/*    width: 500px;*/
+/*    !*height: 180px;*!*/
+/*    height: 223px;*/
+/*    margin: 12% auto;*/
+/*    background-color: rgba(0, 0, 0, .3);*/
+
+/*}*/
+
+/*.downloadForm {*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    top: 100px;*/
+/*    right: 200px;*/
+/*    background-color: #d55b1b;*/
+/*}*/
+
+/*.uploadForm {*/
+/*    float: left;*/
+/*    background-color: #1bdb14;*/
+
+/*    height: 46px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.uploadForm .renameFile {*/
+/*    text-align: left;*/
+/*}*/
+
+/*.choseFile {*/
+/*    float: left;*/
+/*    background-color: blue;*/
+/*    height: 23px;*/
+/*    width: 250px;*/
+/*}*/
+
+
+/*.renameFile {*/
+/*    float: left;*/
+/*    background-color: darkgoldenrod;*/
+/*    height: 23px;*/
+/*    width: 250px;*/
+/*    position: relative;*/
+/*    right: 250px;*/
+/*    top: 23px;*/
+/*    border: 0px;*/
+/*}*/
+
+/*.uploadSubmitButton {*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    top: -23px;*/
+/*    right: -250px;*/
+/*    height: 23px;*/
+/*    background-color: #178fe6;*/
+/*}*/
+
+
+/*.uploadResetButton {*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    top: 3px;*/
+/*    right: 185px;*/
+/*    top: 0px;*/
+/*    right: -223.3px;*/
+/*    height: 23px;*/
+/*    background-color: cadetblue;*/
+/*}*/
+
+
+/*#exitButton {*/
+/*    float: right;*/
+/*    background-color: brown;*/
+/*    position: relative;*/
+/*    top: -46px;*/
+/*    right: 0px;*/
+/*    height: 46px;*/
+/*    text-align: center;*/
+/*    line-height: 46px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.userMenu {*/
+/*    float: left;*/
+/*    width: 100%;*/
+/*    height: 134px;*/
+/*    background-color: #629218;*/
+/*    position: relative;*/
+/*    top: -46px;*/
+/*    left: 0px;*/
+/*}*/
+
+/*.userMenu li {*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*    height: 30px;*/
+/*    text-align: center;*/
+/*    line-height: 30px;*/
+/*}*/
+
+/*.myUpload {*/
+/*    background-color: cadetblue;*/
+/*    font-size: 15px;*/
+/*}*/
+
+
+/*.myDownload {*/
+/*    background-color: #97106a;*/
+/*    font-size: 15px;*/
+
+/*}*/
+
+/*.uploadContent {*/
+/*    !*height: 104px;*!*/
+/*    height: 147px;*/
+/*    background-color: antiquewhite;*/
+/*    overflow: hidden;*/
+/*    line-height: 104px;*/
+/*}*/
+
+/*.uploadContent li {*/
+/*    height: 25px;*/
+/*    width: 250px;*/
+/*    background-color: #f19633;*/
+/*    font-size: 12px;*/
+/*    line-height: 25px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.uploadContent li:hover {*/
+/*    background-color: #8fb0b1;*/
+
+/*}*/
+
+
+/*.uploadContent .preview {*/
+/*    float: right;*/
+/*    background-color: #0ce29e;*/
+/*    position: relative;*/
+/*    top: 5px;*/
+/*    right: 25px;*/
+/*    height: 15px;*/
+/*    font-size: 12px;*/
+
+/*    line-height: 15px;*/
+/*}*/
+
+/*.uploadContent button{*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.uploadContent .download {*/
+/*    float: right;*/
+/*    background-color: #cfc8de;*/
+/*    position: relative;*/
+/*    top: 5px;*/
+/*    right: 20px;*/
+/*    height: 15px;*/
+/*    font-size: 12px;*/
+/*    line-height: 15px;*/
+
+/*}*/
+
+/*.downloadContent {*/
+/*    !*height: 104px;*!*/
+/*    height: 147px;*/
+
+/*    background-color: #310e74;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.downloadContent:hover, .uploadContent:hover {*/
+/*    overflow-y: auto;*/
+/*}*/
+
+/*.downloadContent li {*/
+/*    height: 25px;*/
+/*    width: 250px;*/
+/*    background-color: #d7ae1b;*/
+/*    font-size: 12px;*/
+/*    line-height: 25px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.downloadContent li:hover {*/
+/*    background-color: #a14482;*/
+/*}*/
+
+
+
+
+
+
+
+/** {*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*    user-select: none;*/
+/*    border: none;*/
+/*    user-select: none;*/
+/*    outline: none;*/
+/*    list-style: none;*/
+/*    text-align: center;*/
+
+/*}*/
+
+
+/*body {*/
+/*    margin: 0 auto;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: 100%;*/
+/*    background-color: aqua;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.box {*/
+/*    width: 500px;*/
+/*    height: 180px;*/
+/*    margin: 12% auto;*/
+/*    background-color: rgba(0, 0, 0, .3);*/
+/*}*/
+
+/*.downloadForm{*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    top: 100px;*/
+/*    right: 200px;*/
+/*    background-color: #d55b1b;*/
+/*}*/
+
+/*.uploadForm{*/
+/*    float: left;*/
+/*    background-color: #1bdb14;*/
+
+/*    height: 46px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.choseFile{*/
+/*    float: left;*/
+/*    background-color: blue;*/
+/*    height: 23px;*/
+/*    width: 250px;*/
+/*}*/
+
+/*.renameFile{*/
+/*    float: left;*/
+/*    background-color: darkgoldenrod;*/
+/*    height:23px;*/
+/*    width: 250px;*/
+/*    position: relative;*/
+/*    right: 250px;*/
+/*    top: 23px;*/
+/*    border: 0px;*/
+/*}*/
+
+/*.uploadSubmitButton{*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    top: -23px;*/
+/*    right: -250px;*/
+/*    height: 23px;*/
+/*    background-color: #178fe6;*/
+/*}*/
+
+
+/*.uploadResetButton{*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    top: 3px;*/
+/*    right: 185px;*/
+/*    top: 0px;*/
+/*    right: -223.3px;*/
+/*    height: 23px;*/
+/*    background-color: cadetblue;*/
+/*}*/
+
+
+/*#exitButton{*/
+/*    float: right;*/
+/*    background-color: brown;*/
+/*    position: relative;*/
+/*    top: -46px;*/
+/*    right: 0px;*/
+/*    height: 46px;*/
+/*    text-align: center;*/
+/*    line-height: 46px;*/
+/*}*/
+
+/*.userMenu{*/
+/*    float: left;*/
+/*    width: 100%;*/
+/*    height: 134px;*/
+/*    background-color: #629218;*/
+/*    position: relative;*/
+/*    top: -46px;*/
+/*    left: 0px;*/
+/*}*/
+
+/*.userMenu li{*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*    height: 30px;*/
+/*    text-align: center;*/
+/*    line-height: 30px;*/
+/*}*/
+
+/*.myUpload{*/
+/*    background-color: cadetblue;*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*.myDownload{*/
+/*    background-color: #97106a;*/
+/*    font-size: 15px;*/
+
+/*}*/
+
+/*.uploadContent{*/
+/*    height: 104px;*/
+/*    background-color: antiquewhite;*/
+/*}*/
+
+/*.uploadContent li{*/
+/*    height: 25px;*/
+/*    width: 100%;*/
+/*    background-color: #f19633;*/
+/*    font-size: 12px;*/
+/*    line-height: 25px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.downloadContent{*/
+/*    height: 104px;*/
+/*    background-color: #310e74;*/
+/*}*/
+
+/*.downloadContent li{*/
+/*    height: 25px;*/
+/*    width: 100%;*/
+/*    background-color: #33d09a;*/
+/*    font-size: 12px;*/
+/*    line-height: 25px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.uploadContent .preview{*/
+/*    float: right;*/
+/*    background-color: #0ce29e;*/
+/*    position: relative;*/
+/*    top: 5px;*/
+/*    right: 5px;*/
+/*    height: 15px;*/
+/*    font-size: 12px;*/
+
+/*    line-height: 15px;*/
+/*}*/
+
+/*.uploadContent .download{*/
+/*    float: right;*/
+/*    background-color: #cfc8de;*/
+/*    position: relative;*/
+/*    top: 5px;*/
+/*    right: 3px;*/
+/*    height: 15px;*/
+/*    font-size: 12px;*/
+/*    line-height: 15px;*/
+
+/*}*/
+
+
+

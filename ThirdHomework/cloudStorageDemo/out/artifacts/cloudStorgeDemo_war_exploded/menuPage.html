@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单主页</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="./js/menuJs.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/menuCss.css">
+    <link rel="stylesheet" type="text/css" href="css/selectCss.css">
+
+</head>
+<body>
+
+
+<div class="box">
+
+    <form action="/wolf/uploadServlet" method="post" enctype="multipart/form-data" class="uploadForm">
+        <div class="outlineInput"><input type="file" name="filename" class="choseFile">上传文件</div>
+        <input type="text" name="newFilename" class="renameFile" placeholder="在此重命名文件" autocomplete="off">
+        <button type="submit" name="upload" id="upload" class="uploadSubmitButton">提交</button>
+        <button type="reset" value="reset" class="uploadResetButton">重置</button>
+    </form>
+
+
+    <button type="button" id="exitButton">退出登录</button>
+
+    <ul class="userMenu">
+        <li class="myUpload">
+            我的上传
+            <ul class="uploadContent">
+<!--                <li><span>上传内容上传内容</span><button class="download">下载</button><button class="preview">预览</button></li>-->
+
+
+                <div class="file-outer">
+                    <div class="my-download">
+                        <span contenteditable="true">添加文件夹</span>
+                        <button class="my-download-btn">+</button>
+                    </div>
+                    <div class="add-file-wapper">
+
+                    </div>
+                </div>
+
+
+            </ul>
+        </li>
+
+
+        <li class="myDownload">
+            我的下载
+            <ul class="downloadContent">
+<!--                <li>下载内容</li>-->
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>

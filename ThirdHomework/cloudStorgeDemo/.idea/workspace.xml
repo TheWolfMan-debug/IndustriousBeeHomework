@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="cloudStorgeDemo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1444800d-0771-449f-bd77-965c9d71ebda" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\mySoftWare\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kEU1tAWCxKAMdGTyfu02XWM3S4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="构件" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cloudStorgeDemo\web\WEB-INF\lib" />
+      <recent name="D:\cloudStorgeDemo\web" />
+      <recent name="D:\cloudStorgeDemo\web\js" />
+      <recent name="D:\cloudStorgeDemo\src\main\java\cloudStorage" />
+      <recent name="D:\cloudStorgeDemo\web\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cloudStorage.web" />
+      <recent name="loginDemo.util" />
+      <recent name="loginDemo.download" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\cloudStorgeDemo\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="cloudStorgeDemo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/wolf" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="未命名_cloudStorgeDemo" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49611" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="cloudStorgeDemo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1444800d-0771-449f-bd77-965c9d71ebda" name="默认的" comment="" />
+      <created>1605265032434</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605265032434</updated>
+      <workItem from="1605265033483" duration="143000" />
+      <workItem from="1605265310142" duration="1701000" />
+      <workItem from="1605267217191" duration="12473000" />
+      <workItem from="1605284432107" duration="672000" />
+      <workItem from="1605314591692" duration="7006000" />
+      <workItem from="1605350409962" duration="3040000" />
+      <workItem from="1605353484326" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605351648627">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1605351648627" />
+    <state x="404" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1605320955685">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="404" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1605320955685" />
+    <state x="302" y="23" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605352434076">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="302" y="23" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.689@0.0.1280.689" timestamp="1605352434076" />
+    <state x="121" y="0" key="#项目结构" timestamp="1605352513195">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="0" key="#项目结构/0.0.1280.689@0.0.1280.689" timestamp="1605352513195" />
+    <state width="785" height="154" key="GridCell.Tab.0.bottom" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.0.center" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.0.left" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.0.right" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.1.bottom" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.1.center" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.1.left" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.1.right" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.2.bottom" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.2.center" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.2.left" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="785" height="154" key="GridCell.Tab.2.right" timestamp="1605353464756">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="785" height="154" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1605353464756" />
+    <state width="845" height="134" key="GridCell.Tab.3.bottom" timestamp="1605267655698">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="134" key="GridCell.Tab.3.bottom/0.0.1280.689@0.0.1280.689" timestamp="1605267655698" />
+    <state width="845" height="134" key="GridCell.Tab.3.center" timestamp="1605267655698">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="134" key="GridCell.Tab.3.center/0.0.1280.689@0.0.1280.689" timestamp="1605267655698" />
+    <state width="845" height="134" key="GridCell.Tab.3.left" timestamp="1605267655698">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="134" key="GridCell.Tab.3.left/0.0.1280.689@0.0.1280.689" timestamp="1605267655698" />
+    <state width="845" height="134" key="GridCell.Tab.3.right" timestamp="1605267655698">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="134" key="GridCell.Tab.3.right/0.0.1280.689@0.0.1280.689" timestamp="1605267655698" />
+  </component>
+</project>

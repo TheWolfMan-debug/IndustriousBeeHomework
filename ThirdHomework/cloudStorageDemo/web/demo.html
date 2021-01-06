@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+
+    <title>Document</title>
+   <style>
+       .a-upload {
+           padding: 4px 10px;
+           height: 20px;
+           line-height: 20px;
+           position: relative;
+           cursor: pointer;
+           color: #888;
+           background: #fafafa;
+           border: 1px solid #ddd;
+           border-radius: 4px;
+           overflow: hidden;
+           display: inline-block;
+           *display: inline;
+           *zoom: 1
+       }
+
+       .a-upload  input {
+           position: absolute;
+           font-size: 100px;
+           right: 0;
+           top: 0;
+           opacity: 0;
+           filter: alpha(opacity=0);
+           cursor: pointer
+       }
+
+       .a-upload:hover {
+           color: #444;
+           background: #eee;
+           border-color: #ccc;
+           text-decoration: none
+       }
+   </style>
+
+</head>
+<body>
+
+
+<!--<a href="javascript:;" class="a-upload" >-->
+<!--    <input type="file" name="" id="">点击这里上传文件-->
+<!--</a>-->
+
+<script>
+
+
+    function sub(){
+        $(".uploadFile").click();
+    }
+
+    function outReset() {
+        $(".resetButton").click()
+    }
+    function outSubmit() {
+        $(".submitButton").click()
+    }
+</script>
+
+<form action="/wolf/uploadServlet" method="post" enctype="multipart/form-data" class="a-upload" >
+    <input type="file" name="" id="" class="uploadFile">点击这里上传文件
+    <button type="reset" class="resetButton" style="display: none">重置</button>
+    <button type="submit" class="submitButton" style="display: none">上传</button>
+</form>
+
+<button type="reset" class="outResetButton" onclick="outReset()">重置</button>
+<button type="submit" class="outSubmitButton" onclick="outSubmit()">上传</button>
+
+<button class="sub" onclick="sub()">点击这里上传文件</button>
+
+
+</body>
+</html>
